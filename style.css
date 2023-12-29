@@ -1,4 +1,153 @@
-html {
-  height: 100%;
-  width: 100%;
+html, body {
+  height: 100vh;
+  width: 100vw;
+  background: lightgreen no-repeat 50% 50%;
+  background-size: cover;
+  margin: 0px;
+}
+ @font-face { font-family: Caveat; src: url('Caveat-Regular.ttf'); } 
+ @font-face { font-family: Storytime; src: url('EBGaramond-Regular.ttf'); } 
+.storyl {
+  font-family: Storytime;
+  width: 50vmax;
+  font-size: 3vmax;
+  margin-right: 0px;
+}
+.storyr {
+  font-family: Storytime;
+  width: 50vmax;
+  font-size: 3vmax;
+  position: absolute;
+  left: 55vmax;
+}
+body {
+    margin: auto;
+}
+.titl {
+  font-size:5vmax;
+  margin: 0.5vmax
+}
+.al {
+  font-size: 2.5vmax;
+  text-align: left;
+  padding: 1vmax;
+  display: block;
+}
+.pic {
+  width: 47%;
+  height: auto;
+  margin: 0vmax;
+  float:right;
+}
+.foot{ 
+  height: 3vh;
+  font-size: 3vh;
+  position: fixed;     
+  text-align: center;    
+  bottom: 0px; 
+  width: 100vw;
+  background-color: darkgreen;
+  color: white;
+  border-top: 1vh solid black;
+  animation-name: footout;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; 
+}
+.foot:hover {
+  cursor: pointer;
+}
+@keyframes footout{
+  from {
+    height: 10vh;
+    color: white;
+  }
+  to {
+    height: 3vh;
+    color: darkgreen;
+  }
+}
+@keyframes footin{
+  from {
+    height: 3vh;
+  }
+  to {
+    height: 10vh;
+  }
+}
+.foot2 {
+  font-size: 3vh;
+  height: 3vh;
+  position: fixed;     
+  text-align: center;    
+  bottom: 0px; 
+  width: 100vw;
+  background-color: darkgreen;
+  color: white;
+  border-top: 1vh solid black;
+  animation-name: footin;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;  
+}
+.foot2:hover {
+  cursor: pointer;
+}
+.hide {
+  display:none;
+}
+.spin {
+  transform: rotate(180deg);
+}
+.show {
+  display: block;
+}
+td {
+  width: 49vw;
+}
+tr {
+  width: 99vw;
+}
+.genre {
+  width: 49vw;
+  height: auto;
+}
+.genre:hover {
+  cursor: pointer;
+}
+table {
+  display: block;
+}
+summary {
+  cursor: pointer;
+}
+details {
+  height: 100vh;
+}
+
+#myTable {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+#myTable th, #myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+  cursor: pointer;
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #ffffff;
+}
+.yay {
+  font-size: 2vh;
+}
+.tabtitl {
+  font-size: 2.5vh;
 }
